@@ -10,7 +10,7 @@ const Button = styled.button`
     background-color: ${props => props.theme.colors.secondary};
     color: #fff;
     border-radius: 3px;
-    border: 1px solid ${props => props.theme.colors.secondary};
+    border: 1px solid ${props => props.theme.colors.complementry};
     box-shadow:2px 2px 2px;
     padding: 5px 5px;
     margin: 5px 10px;
