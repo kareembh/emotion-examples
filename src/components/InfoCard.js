@@ -46,15 +46,13 @@ const CardText = styled.p`
     margin: 5px;
 `
 
-const myText = 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.';
-
-export default function InfoCard() {
+export default function InfoCard(props) {
     return (
         <div>
             <Wrapper>
-                <Title>Welcome</Title>
-                <CardText> {myText} </CardText>
-                <Button>Contact Us</Button>
+                <Title> {props.cardTitle} </Title>
+                <CardText> {props.cardText} </CardText>
+                <Button> {props.cardButtonText} </Button>
             </Wrapper>
         </div>
     )
